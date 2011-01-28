@@ -9,11 +9,24 @@
 
 <?php
 
-$posts = scandir("posts");
+$posts = scandir("posts", 1);
 
 foreach( $posts as $post )
 {
-	echo $post . "<br>";
+	if( $post[0] != "." )
+	{
+		if( strpos($post, ".post") != FALSE)
+		{
+			$filename = "posts/" . $post;
+		
+			$file = file_get_contents($filename);
+		
+			echo $file;
+			echo "<br>";
+			echo "<br>";
+		
+		}
+	}
 }
 
 
