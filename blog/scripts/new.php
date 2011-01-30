@@ -6,7 +6,7 @@ date_default_timezone_set('America/New_York');
 
 $title = $_POST['title'];
 $blogpost = $_POST['blogpost'];
-$date = date("m-t-Y_H:i");
+$date = date("m-d-Y_H:i");
 
 
 $filepath = "../posts/" . $date . ".post";
