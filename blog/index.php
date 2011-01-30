@@ -22,6 +22,7 @@ foreach( $posts as $post )
 			$file = file_get_contents($filename);
 		
 			echo $file;
+			echo "<br><hr noshade>";
 			echo "<br>";
 			echo "<br>";
 		
