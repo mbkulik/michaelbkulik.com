@@ -19,12 +19,18 @@ foreach( $posts as $post )
 		{
 			$filename = "posts/" . $post;
 		
-			$file = file_get_contents($filename);
+			$file = file($filename);
 		
-			echo $file;
-			echo "<br><hr noshade>";
-			echo "<br>";
-			echo "<br>";
+            //$lines = preg_split("\\n", $file);
+
+            echo "<h><b>" . $file[0] . "&nbsp&nbsp&nbsp";
+            echo "</b></h>" . $file[1] . "<br>";
+            echo "<pre>" . $file[2] . "</pre>";
+
+			//echo $file;
+			//echo "<br><hr noshade>";
+			//echo "<br>";
+			//echo "<br>";
 		
 		}
 	}
