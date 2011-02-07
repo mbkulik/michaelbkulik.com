@@ -9,7 +9,7 @@ $blogpost = $_POST['blogpost'];
 $date = date("m-d-Y_H:i");
 
 
-$filepath = "../posts/" . $date . ".post";
+$filepath = "../../posts/" . $date . ".post";
 
 $filehandle = fopen($filepath, 'x') or die('Error Opening File!');
 fwrite($filehandle, "<h><b>" . $title . "&nbsp&nbsp&nbsp</b></h>\n");
