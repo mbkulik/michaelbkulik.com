@@ -1,8 +1,8 @@
 <html>
 
-<DIV ALIGN=CENTER>
+<center>
 	<b>Blog</b>
-</DIV>
+</center>
 
 <br>
 <br>
@@ -21,22 +21,13 @@ foreach( $posts as $post )
 		
 			$file = file($filename);
 		
-            //$lines = preg_split("\\n", $file);
-
             echo "<h><b>" . $file[0] . "&nbsp&nbsp&nbsp";
             echo "</b></h>" . $file[1] . "<br>";
             echo "<pre>" . $file[2] . "</pre>";
-
-			//echo $file;
-			//echo "<br><hr noshade>";
-			//echo "<br>";
-			//echo "<br>";
-		
+            echo "<br><hr noshade>";
 		}
 	}
 }
-
-
 ?>
 
 </html>
