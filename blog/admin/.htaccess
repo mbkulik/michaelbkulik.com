@@ -1,4 +1,0 @@
-AuthName "Blog Admin Login"
-AuthType Basic
-AuthUserFile /home/mk/.blogpasswd
-Require user admin

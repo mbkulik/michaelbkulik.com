@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<script type="text/javascript" 
+		src="http://mbkulik.tumblr.com/api/read/json"></script>
+
+		<script type="text/javascript">
+		<!--
+
+		function load()
+		{
+			var posts = tumblr_api_read['posts'];
+			var html = "";
+
+			for( i = 0; i < posts.length; i++ )
+			{
+				var post_date = posts[i].date;
+				var post_title = posts[i]['regular-title'];
+				var post_text = posts[i]['regular-body'];
+				
+				html += "<h><b>" + post_title +
+				        "&nbsp&nbsp&nbsp</b></h>" +
+					post_date + "<br />" +
+					post_text  +
+					"<br /><hr noshade>";
+			}
+
+			document.write(html);
+		}
+		
+		//-->
+		</script>
+	</head>
+	<body>
+		<center>
+			<b>Blog</b>
+		</center>
+
+		<br />
+
+		<script type="text/javascript">
+			load();
+		</script>
+
+		<br />
+		<footer>
+			<center>
+			Powered by <a target="_blank" 
+			href="http://www.mbkulik.tumblr.com">tumblr</a>
+			</center>
+		</footer>
+	</body>
+</html>
