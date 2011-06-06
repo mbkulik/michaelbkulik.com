@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#
+# Michael B. Kulik
+# 6/6/2011
+#
+# deploy script for devious site
+#
+
+state=$1
+platform=`uname`
+
+case "$state" in
+'devel')
+	if [ "$platform" == "Darwin" ]; then
+		open index.html
+	else
+		firefox index.html
+	fi
+	;;
+'production')
+	scp *.html mk@devio.us:/home/mk/public_html/
+	;;
+*)
+	echo "$0 {devel|production}"
+	exit 1
+	;;
+esac
