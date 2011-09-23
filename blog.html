@@ -1,5 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+    
+        <meta http-equiv="Content-Type"
+        content="text/html;charset=ISO-8859-1">
+
 		<script type="text/javascript" 
 		src="http://mbkulik.tumblr.com/api/read/json"></script>
 
@@ -18,7 +24,7 @@
 				var post_text = posts[i]['regular-body'];
 				
 				html += "<h><b>" + post_title +
-				        "&nbsp&nbsp&nbsp</b></h>" +
+				        "&nbsp&nbsp&nbsp<\/b><\/h>" +
 					post_date + "<br />" +
 					post_text  +
 					"<br /><hr noshade>";
@@ -29,24 +35,28 @@
 		
 		//-->
 		</script>
+
+        <title></title>
+
 	</head>
-	<body>
+	
+    <body>
 		<center>
 			<b>Blog</b>
 		</center>
 
-		<br />
+		<br>
 
 		<script type="text/javascript">
 			load();
 		</script>
 
-		<br />
-		<footer>
+		<br>
+		<!--<footer>-->
 			<center>
 			Powered by <a target="_blank" 
 			href="http://www.mbkulik.tumblr.com">tumblr</a>
 			</center>
-		</footer>
+		<!--</footer>-->
 	</body>
 </html>
