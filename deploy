@@ -18,7 +18,7 @@ case "$state" in
 	fi
 	;;
 'production')
-	scp *.html *.ico mk@devio.us:/home/mk/public_html/
+	scp *.html *.ico *.css mk@devio.us:/home/mk/public_html/
 	;;
 *)
 	echo "$0 {devel|production}"

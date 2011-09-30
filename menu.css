@@ -1,0 +1,16 @@
+.menu
+{
+
+    float:top;
+}
+
+li.menu
+{
+    margin-right:15px;
+    display:inline;
+}
+
+a.menu
+{
+    text-decoration:none;
+}
