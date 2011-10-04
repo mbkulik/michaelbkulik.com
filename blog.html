@@ -21,15 +21,33 @@
 
 			for( i = 0; i < posts.length; i++ )
 			{
-				var post_date = posts[i].date;
-				var post_title = posts[i]['regular-title'];
-				var post_text = posts[i]['regular-body'];
+                var type = posts[i]['type'];
+
+                if( type == 'photo' )
+                {
+                    var post_date = posts[i].date;
+                    var post_caption = posts[i]['photo-caption'];
+                    var post_photourl = posts[i]['photo-url-400'];
+
+                    html += "<h><b>Photo Post&nbsp&nbsp&nbsp<\/b><\/h>" +
+                            post_date + "<br />" +
+                            post_caption + "<br />" +
+                            "<img src=\"" + post_photourl + "\" />" +
+                            "<br /><hr noshade>";
+                }
+        
+                if( type == 'regular' )
+                {
+				    var post_date = posts[i].date;
+				    var post_title = posts[i]['regular-title'];
+				    var post_text = posts[i]['regular-body'];
 				
-				html += "<h><b>" + post_title +
+				    html += "<h><b>" + post_title +
 				        "&nbsp&nbsp&nbsp<\/b><\/h>" +
-					post_date + "<br />" +
-					post_text  +
-					"<br /><hr noshade>";
+				        post_date + "<br />" +
+				        post_text  +
+				        "<br /><hr noshade>";
+                }
 			}
 
 			document.write(html);
