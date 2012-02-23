@@ -5,42 +5,43 @@
 #
 # deploy script for devious site
 #
-# use git-diff --name-only to get a list of changed files for pushing to 
-# devious
 
-doProduction=0
-doTesting=0
-
-while getopts "pt" flag
+while getopts "pwfth" flag
 do
     if [ "$flag" = "p" ]; then
-        doProduction=1
+        echo -e "Deploy Everything to Production"
+        break
+    fi
+    
+    if [ "$flag" = "w" ]; then
+        echo -e "Deploy Just html files"
+    fi
+
+    if [ "$flag" = "f" ]; then
+        echo -e "Deploy just folders"
     fi
 
     if [ "$flag" = "t" ]; then
-        doTesting=1
+        echo -e "Test mode"
+    fi
+
+    if [ "$flag" = "h" ]; then
+        echo -e "usage: $0 {p|w|f||t|h}\np -> production\nt -> testing"
     fi
 done
 
-if [ $doProduction = 1 ]; then
-    if [ ! -d "staging" ]; then
-        mkdir staging
-    fi
-
-    topush=`git diff --name-only`
-    for file in $topush
-    do
-        echo "Copying $file to staging directory"
-        cp -R $file staging/
-    done
-
-
-elif [ $doTesting = 1 ]; then
-    if [ `uname` = "Darwin" ]; then
-        open index.html
-    else
-        xdg-open index.html
-    fi
-else
-    echo -e "usage: $0 {p|t}\np -> production\nt -> testing"
-fi
+#if [ $doAll -eq 1 ]; then
+#    echo -e "Do All\n"
+#    #scp -r *.html css/ images/ mk@devio.us:/home/mk/public_html/
+#elif [ $doHtml = 1 | $doFolders = 1 ]; then
+#    echo -e "Do html or Folders\n"
+#    #scp -r *.html mk@devio.us/home/mk/public_html/
+#elif [ $doTesting = 1 ]; then
+#    if [ `uname` = "Darwin" ]; then
+#        open index.html
+#    else
+#        xdg-open index.html
+#    fi
+#else
+#    echo -e "usage: $0 {h|f|a|t}\np -> production\nt -> testing"
+#fi
