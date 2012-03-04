@@ -1,16 +1,37 @@
-.menu
+#navlist
 {
-
-    float:top;
+	margin: 0;
+	padding: 0 0 20px 10px;
+	border-bottom: 1px solid #000;
 }
 
-li.menu
+#navlist ul, #navlist li
 {
-    margin-right:15px;
-    display:inline;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
 }
 
-a.menu
+#navlist a:link, #navlist a:visited
 {
-    text-decoration:none;
+	float: left;
+	line-height: 14px;
+	font-weight: bold;
+	margin: 0 10px 4px 10px;
+	text-decoration: none;
+	color: #999;
+}
+
+#navlist a:link#current, #navlist a:visited#current, #navlist a:hover
+{
+	border-bottom: 4px solid #000;
+	padding-bottom: 2px;
+	background: transparent;
+	color: #000;
+}
+
+#navlist a:hover 
+{ 
+	color:#000; 
 }
