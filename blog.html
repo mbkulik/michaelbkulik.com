@@ -28,14 +28,22 @@
                 {
                     var post_date = posts[i].date;
                     var post_caption = posts[i]['photo-caption'];
-                    var post_photourl = posts[i]['photo-url-400'];
-
+                    
+					if( window.innerWidth < 400 )
+					{
+						var post_photourl = posts[i]['photo-url-250'];
+					}
+					else
+					{
+						var post_photourl = posts[i]['photo-url-400'];
+					}
+					
                     html += "<h><b>Photo Post&nbsp&nbsp&nbsp<\/b><\/h>" +
                             post_date + "<br />" +
                             post_caption + "<br />" +
                             "<img src=\"" + post_photourl + "\" />" +
                             "<br /><hr noshade>";
-                }
+				}
         
                 if( type == 'regular' )
                 {
@@ -78,7 +86,7 @@
             <br>
 
 		    <script type="text/javascript">
-			    load();
+				load();    
 		    </script>
 
 		    <br>
