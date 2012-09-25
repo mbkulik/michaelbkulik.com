@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+	<head>
 		<meta charset="utf-8">
+		<title>mk.devio.us</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
-        <link rel="stylesheet" type="text/css" href="css/menu.css">
-		<link rel="stylesheet" type="text/css" href="css/content.css">
-
-        <title>
-            mk.devio.us
-        </title>
-
-        <style type="text/css">
-
-            li
-            {
-                list-style-type:none;
-            }
-
-        </style>
-
-    </head>
-
-    <body>
-
-        <div id="navcontainer">
-                <ul id="navlist">
-                    <li><a href="index.html">MovieStreamer</a></li>
-                    <li><a class="menu" href="blog.html">Blog</a></li>
-                    <li><a id="current" href="about.html">About</a></li>
-                </ul>
-        </div>
-
-        <div>
-            <br>
-            <br>
-            I am a 25 year old software engineer living and
-            working in New Hampshire, USA.
-            <br>
-			<h2>Information</h2>
-			<ul>
-				<li><a href="http://www.github.com/mbkulik" target="_blank">github</a></li>
-				<li>email: mk AT devio DOT us</li>
-			</ul>
-
-            <h2>Interests</h2>
-            <ul>
-				<li>OSX/OpenBSD</li>
-				<li>C/Ruby/Web</li>
-				<li>embedded devices</li>
-				<li>HTML5 video streaming</li>
-				<li>camping/hiking</li>
-				<li>chess/penete</li>
-			</ul>
-
-        </div>
-
-    </body>
-
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+		</style>
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	
+		<link rel="shortcut icon" href="favicon.ico">
+		
+	</head>
+	<body>
+		
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<ul class="nav">
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="about.html">About</a></li>
+						<li><a href="http://www.mbkulik.tumblr.com">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<p>
+					I live, work, and attend graduate school in the great state of New Hampshire.
+				<p>
+				
+				<br />
+			</div>
+			
+			<div class="row">
+				<div class="span4">
+					<table class="table table-condensed">
+						<caption><h2>Information</h2></caption>
+						<tr>
+							<td>github</td>
+							<td><a href="http://www.github.com/mbkulik">github.com/mbkulik</a></td>
+						</tr>
+						<tr>
+							<td>email</td>
+							<td><a href="mailto:mk@devio.us">mk@devio.us</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>		
+			
+			<div class="row">
+				<div class="span4">
+					<table class="table table-condensed">
+						<caption><h2>Interests</h2></caption>
+						<tr>
+							<td>OS X, OpenBSD</td>
+						</tr>
+						<tr>
+							<td>C, Ruby, Web</td>
+						</tr>
+						<tr>
+							<td>embedded devices</td>
+						</tr>
+						<tr>
+							<td>HTML5 video streaming</td>
+						</tr>
+						<tr>
+							<td>camping, hiking</td>
+						</tr>
+						<tr>
+							<td>chess, pente<td>
+						</tr>
+					</table>
+			</div>
+			
+		</div>
+		
+		<!-- scripts -->
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
 </html>
