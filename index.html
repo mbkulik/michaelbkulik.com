@@ -15,40 +15,112 @@
 			}
 		</style>
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-	
-		<link rel="shortcut icon" href="favicon.ico">
-		
+		<link rel="shortcut icon" href="img/favicon.ico">
+
+		<script type="text/javascript" src="http://mbkulik.tumblr.com/api/read/json"></script>
 	</head>
 	<body>
-		
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<ul class="nav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="http://www.mbkulik.tumblr.com">Blog</a></li>
-						
+		<div class="container">
+			<div class="row">
+				<div class="span3 bs-docs-sidebar hidden-tablet hidden-phone">
+					<ul class="nav nav-list bs-docs-sidenav affix">
+						<li><a href="#about">About</a></li>
+						<li><a href="#openbsd">OpenBSD</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#blog">Blog</a></li>
 					</ul>
 				</div>
+				<div class="span9">
+				
+					<!-- About -->
+					<div id="about">
+						<div class="page-header">
+							<h1>About</h1>
+						</div>
+						<p>
+						I live, work, and attend graduate school in the great state 
+						of New Hampshire.<br/>
+						During the day, I am a C++/.NET programmer writing software for 
+						CAD systems.<br/>
+						When my schedule permits I attend graduate classes, 
+						program with ruby, and explore OpenBSD.<br/>
+						<br/>
+						<ul class="unstyled">
+							<li><h4>Interests:</h4>
+								<ul class="unstyled">
+									<li>OpenBSD, Mac OS X</li>
+									<li>C, ruby</li>
+									<li>HTML5 video streaming</li>
+									<li>astronomy, astrophysics</li>
+								</ul>
+							</li>
+						</ul>
+							<br/>
+							<ul class="unstyled">
+								<li><h4>Contact:</h4>
+									<ul class="unstyled">
+										<li><a href="http://github.com/mbkulik">github</a></li>
+										<li><a href="mailto:mk@devio.us">email</a></li>
+									</ul>
+								</li>
+							</ul>
+						</p>
+					</div>
+
+					<!-- OpenBSD -->
+					<div id="openbsd">
+						<div class="page-header">
+							<h1>OpenBSD</h1>
+						</div>
+						<p>
+
+						</p>
+					</div>
+
+					<!-- Projects -->
+					<div id="projects">
+						<div class="page-header">
+							<h1>Projects</h1>
+						</div>
+
+						<h3>MovieStreamer App <font size="3">(macosx)</font></h3>
+						<p>
+						</p>
+						<a href="http://moviestreamerapp.com">website</a>
+
+						<h3>moviestreamer <font size="3">(ruby)</font></h3>
+						<p>
+							The initial inspiration for MovieStreamer app 
+						</p>
+						<a href="http://github.com/mbkulik/moviestreamer">code</a>
+
+						<h3>con2webm <font size="3">(ruby)</font></h3>
+						<p>
+						</p>		
+						<a href="http://github.com/mbkulik/con2webm">code</a>
+					</div>
+
+					<!-- Blog -->
+					<br/>
+					<div id="blog">
+						<div class="page-header">
+							<h1>Blog</h1>
+						</div>
+					
+						<script type="text/javascript">
+				
+							for(var i = 0; i < tumblr_api_read.posts.length; i++ )
+							{
+								document.write('<a href="' + 
+										tumblr_api_read.posts[i].url + 
+										'">' + tumblr_api_read.posts[i].slug +
+										'</a><br/><br/>');							
+							}
+
+						</script>
+					</div>
+				</div>
 			</div>
-		</div>
-		
-		<div class="container">
-			<p>
-			MovieStreamer has been moved to <a href="http://www.moviestreamerapp.com">http://www.moviestreamerapp.com</a>.<br/>
-			There you can find the most up to date information and versions of MovieStreamer.<br/>
-			<br/>
-			
-			This site will be continued to use for testing OpenBSD features (devio.us runs on OpenBSD), slowly learning web programming,
-			and my personal blog.<br/>
-			
-			Please feel free to contact me, and don't forget to check out MovieStreamer.<br/>
-			<br/>
-			
-			~mk
-			 
-			</p>		
 		</div>
 		
 		<!-- scripts -->
