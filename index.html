@@ -17,9 +17,6 @@
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link rel="shortcut icon" href="img/favicon.ico">
 
-		<script type="text/javascript" 
-			src="http://mbkulik.tumblr.com/api/read/json">
-		</script>
 	</head>
 	<body>
 		<div class="container">
@@ -29,7 +26,8 @@
 						<li><a href="#about">About</a></li>
 						<li><a href="#openbsd">OpenBSD</a></li>
 						<li><a href="#projects">Projects</a></li>
-						<li><a href="#blog">Blog</a></li>
+						<li><a href="http://michaelbkulik.wordpress.com">
+							Blog</a></li>
 					</ul>
 				</div>
 				<div class="span9">
@@ -95,76 +93,90 @@
 						<h1>Projects</h1>
 						<hr/>
 
-						<h3>MovieStreamer App <font size="3">(macosx)</font></h3>
-						<p>
-						Inspired by the moviestreamer sinatra app, MovieStreamer 
-						is a standalone Objective-C application for watching 
-						personal movies stored on your mac via any HTML5 
-						compatible browser on your local network.
-						</p>
-						<a href="http://moviestreamerapp.com">website</a>
+						<div id="MovieStreamer App">
+							<h3>MovieStreamer App <font size="3">(macosx)</font></h3>
+							<p>
+								Inspired by the moviestreamer sinatra app, 
+								MovieStreamer is a standalone Objective-C 
+								application for watching personal movies stored 
+								on your mac via any HTML5 compatible browser 
+								on your local network.
+							</p>
+							<a href="http://moviestreamerapp.com">website</a>
+						</div>
 
-						<h3>moviestreamer <font size="3">(ruby)</font></h3>
-						<p>
-						simple sinatra app for watching personal movies through
-						HTML5 compatible browsers.<br/>
+						<br/>
 
-						<dl>
-							<dt><b>Requirements:</b></dt>
-							<dd>puma gem</dd>
-							<dd>sinatra gem</dd>
-							<dd>browser gem</dd>
-							<dd>json gem</dd>
-						</dl>
+						<div id="moviestreamer">
+							<h3>moviestreamer <font size="3">(ruby)</font></h3>
+							<p>
+								A simple sinatra app for watching personal movies 
+								through HTML5 compatible browsers.<br/>
+
+								<dl>
+									<dt><b>Requirements:</b></dt>
+									<dd>puma gem</dd>
+									<dd>sinatra gem</dd>
+									<dd>browser gem</dd>
+									<dd>json gem</dd>
+								</dl>
 						
-						<a href="http://github.com/mbkulik/moviestreamer">code</a>
-						</p>
+								<a href="http://github.com/mbkulik/moviestreamer">
+									code</a>
+							</p>
+						</div>
+
+						<br/>
+
+						<div id="mg">
+							<h3>mg editor <font size="3">(c)</font></h3>
+							<p>
+								A port of OpenBSD's mg editor to mac os x.
+
+								<dl>
+									<dt><b>Requirements:</b></dt>
+									<dd>c compiler</dd>
+									<dd>bsdmake</dd>
+								</dl>
+
+								<a href="http://github.com/mbkulik/mg">code</a>
+							</p>
+						</div>
 						
-						<h3>mkruby <font size="3">(shell)</font></h3>
-						<p>
-						fetches and builds the latest 1.9.3 ruby patchset.<br/>
+						<br/>
 
-						<dl>
-							<dt><b>Requirements:</b></dt>
-							<dd>posix shell</dd>
-						</dl>
+						<div id="mkruby">
+							<h3>mkruby <font size="3">(shell)</font></h3>
+							<p>
+								Fetches and builds the latest 1.9.3 ruby 
+								patchset.<br/>
+
+								<dl>
+									<dt><b>Requirements:</b></dt>
+									<dd>posix shell</dd>
+								</dl>
 						
-						<a href="http://github.com/mbkulik/mkruby">code</a>
-						</p>
+								<a href="http://github.com/mbkulik/mkruby">code</a>
+							</p>
+						</div>
+
+						<br/>
 						
-						<h3>con2webm <font size="3">(ruby)</font></h3>
-						<p>
-						automates converting mp4 videos to webm.<br/>
+						<div id="con2webm">
+							<h3>con2webm <font size="3">(ruby)</font></h3>
+							<p>
+								Automates converting mp4 videos to webm.<br/>
 
-						<dl>
-							<dt><b>Requirements:</b></dt>
-							<dd>ffmpeg</dd>
-							<dd>ffprober gem</dd>
-						</dl>
+								<dl>
+									<dt><b>Requirements:</b></dt>
+									<dd>ffmpeg</dd>
+									<dd>ffprober gem</dd>
+								</dl>
 						
-						<a href="http://github.com/mbkulik/con2webm">code</a>
-						</p>		
-					</div>
-
-					<br/>
-					<br/>
-
-					<!-- Blog -->
-					<div id="blog">
-						<h1>Blog</h1>
-						<hr/>
-
-						<script type="text/javascript">
-				
-							for(var i = 0; i < tumblr_api_read.posts.length; i++ )
-							{
-								document.write('<a href="' + 
-										tumblr_api_read.posts[i].url + 
-										'">' + tumblr_api_read.posts[i].slug +
-										'</a><br/><br/>');							
-							}
-
-						</script>
+								<a href="http://github.com/mbkulik/con2webm">
+									code</a>
+							</p>
+						</div>		
 					</div>
 				</div>
 			</div>
