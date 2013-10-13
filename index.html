@@ -7,19 +7,36 @@
 		<meta name="description" content="">
 		<meta name="author" content="Michael B. Kulik">
 		
-		<link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/journal/bootstrap.min.css" 
-		rel="stylesheet">
+		<link rel="stylesheet" 
+			href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" 
+			href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 		
 		<style type="text/css">
 			body {
 				padding-top: 80px;
 				padding-bottom: 40px;
 			}
-			
+
+      		/* Custom container */
+      		.container-narrow {
+        		margin: 0 auto;
+        		max-width: 800px;
+      		}
+      		
+      		.container-narrow > hr {
+        		margin: 30px 0;
+      		}
+		
 			ul {
 				list-style-type: none;
 				padding-left: 1em;
 			}
+			
+			/* Supporting marketing content */
+      			.marketing {
+        		margin: 60px 0;
+      		}
 		</style>
 		
 		<link rel="shortcut icon" href="favicon.ico">
@@ -27,30 +44,27 @@
 	</head>
 	<body>
 		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<nav class="navbar navbar-default navbar-static-top" role="navigation">
-  						<ul class="nav navbar-nav">
-            				<li><a href="#about">About</a></li>
-            				<li><a href="#openbsd">OpenBSD</a></li>
-            				<li><a href="#projects">Projects</a></li>
-            				<li><a href="http://michaelbkulik.wordpress.com">Blog</a></li>
-            			</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
+		<div class="container-narrow">
+			
+			<!-- navigation bar -->
+			<div class="masthead">
+				<ul class="nav nav-pills pull-right">
+            		<li><a href="#about">About</a></li>
+            		<li><a href="#openbsd">OpenBSD</a></li>
+            		<li><a href="#projects">Projects</a></li>
+            		<li><a href="http://michaelbkulik.wordpress.com">Blog</a></li>
+            	</ul>
+            	<h3>MBK</h3>
+            	<hr>
+            </div>
 				
-		<div class="container">
-			<div class="row">	
-				<div class="col-md-6 col-md-offset-3">
+			<div class="marketing">
 				
-					<!-- About -->
-					<div id="about">
-						<h1>About</h1>
-						<hr/>		
-						<p>
+				<!-- About -->
+				<div id="about">
+					<h1>About</h1>
+					<hr/>		
+					<p>
 						I live, work, and attend graduate school in the great 
 						state of New Hampshire.<br/>
 						During the day, I am a C++/.NET programmer writing 
@@ -71,19 +85,18 @@
 						<ul>
 							<li><a href="http://github.com/mbkulik">github.com/mbkulik</a></li>
 							<li><a href="mailto:mbk@michaelbkulik.com">mbk@michaelbkulik.com</a></li>
-						</ul>
-						
-						</p>
-					</div>
+						</ul>		
+					</p>
+				</div>
 
-					<br/>
-					<br/>
+				<br/>
+				<br/>
 
-					<!-- OpenBSD -->
-					<div id="openbsd">
-						<h1>OpenBSD</h1>
-						<hr/>
-						<p>
+				<!-- OpenBSD -->
+				<div id="openbsd">
+					<h1>OpenBSD</h1>
+					<hr/>
+					<p>
 						I have been using OpenBSD in earnest since version 4.6 
 						and for the past year have been starting to use ruby 
 						more and more in my side projects. The only downside is 
@@ -98,127 +111,125 @@
 						official ruby packages are the binaries and gems do not 
 						have the 19 suffix. So that extra step of creating 
 						links is no longer needed.
+					</p>
+				</div>
+
+				<br/>
+				<br/>
+
+				<!-- Projects -->
+				<div id="projects">
+					<h1>Projects</h1>
+					<hr/>
+
+					<div id="MovieStreamer App">
+						<h3>MovieStreamer App <font size="3">(Objective-C)</font></h3>
+						<p>
+							Inspired by the moviestreamer sinatra app, 
+							MovieStreamer is a native Mac OS X application 
+							for watching personal movies stored on your mac via any 
+							HTML5 compatible browser on your local network.
 						</p>
+						<a href="http://moviestreamerapp.com">website</a>&nbsp;
+						<a href="http://github.com/mbkulik/moviestreamerapp">code</a>
 					</div>
 
 					<br/>
+
+					<div id="moviestreamer">
+						<h3>moviestreamer <font size="3">(ruby)</font></h3>
+						<p>
+							A simple sinatra app for watching personal movies 
+							through HTML5 compatible browsers.
+								
+							<br/>
+							<br/>
+							<b>Requirements:</b>
+							<ul>
+								<li>puma gem</li>
+								<li>sinatra gem</li>
+								<li>browser gem</li>
+								<li>json gem</li>
+							</ul>
+						</p>
+						<a href="http://github.com/mbkulik/moviestreamer">code</a>
+					</div>
+
 					<br/>
 
-					<!-- Projects -->
-					<div id="projects">
-						<h1>Projects</h1>
-						<hr/>
+					<div id="mg">
+						<h3>mg editor <font size="3">(c)</font></h3>
+						<p>
+							A port of OpenBSD's mg editor to mac os x.
 
-						<div id="MovieStreamer App">
-							<h3>MovieStreamer App <font size="3">(Objective-C)</font></h3>
-							<p>
-								Inspired by the moviestreamer sinatra app, 
-								MovieStreamer is a native Mac OS X application 
-								for watching personal movies stored on your mac via any 
-								HTML5 compatible browser on your local network.
-							</p>
-							<a href="http://moviestreamerapp.com">website</a>&nbsp;
-							<a href="http://github.com/mbkulik/moviestreamerapp">code</a>
-						</div>
-
-						<br/>
-
-						<div id="moviestreamer">
-							<h3>moviestreamer <font size="3">(ruby)</font></h3>
-							<p>
-								A simple sinatra app for watching personal movies 
-								through HTML5 compatible browsers.
-								
-								<br/>
-								<br/>
-								<b>Requirements:</b>
-								<ul>
-									<li>puma gem</li>
-									<li>sinatra gem</li>
-									<li>browser gem</li>
-									<li>json gem</li>
-								</ul>
-							</p>
-							<a href="http://github.com/mbkulik/moviestreamer">code</a>
-						</div>
-
-						<br/>
-
-						<div id="mg">
-							<h3>mg editor <font size="3">(c)</font></h3>
-							<p>
-								A port of OpenBSD's mg editor to mac os x.
-
-								<br/>
-								<br/>
-								<b>Requirements:</b>
-								<ul>
-									<li>c compiler</li>
-									<li>bsdmake</li>
-								</ul>
-							</p>
-							<a href="http://github.com/mbkulik/mg">code</a>
-						</div>
+							<br/>
+							<br/>
+							<b>Requirements:</b>
+							<ul>
+								<li>c compiler</li>
+								<li>bsdmake</li>
+							</ul>
+						</p>
+						<a href="http://github.com/mbkulik/mg">code</a>
+					</div>
 						
-						<br/>
+					<br/>
 
-						<div id="mkruby">
-							<h3>mkruby <font size="3">(shell)</font></h3>
-							<p>
-								Fetches and builds the latest 1.9.3 or 2.0.0 ruby 
-								patchset.
+					<div id="mkruby">
+						<h3>mkruby <font size="3">(shell)</font></h3>
+						<p>
+							Fetches and builds the latest 1.9.3 or 2.0.0 ruby 
+							patchset.
 								
-								<br/>
-								<br/>
-								<b>Requirements:</b>
-								<ul>
-									<li>OpenBSD 5.3 i386/amd64</li>
-									<li>libffi</li>
-									<li>libyaml</li>
-									<li>bash shell</li>
-									<li>cURL</li>
-								</ul>
-							</p>
-							<a href="http://github.com/mbkulik/mkruby">code</a>
-						</div>
+							<br/>
+							<br/>
+							<b>Requirements:</b>
+							<ul>
+								<li>OpenBSD 5.3 i386/amd64</li>
+								<li>libffi</li>
+								<li>libyaml</li>
+								<li>bash shell</li>
+								<li>cURL</li>
+							</ul>
+						</p>
+						<a href="http://github.com/mbkulik/mkruby">code</a>
+					</div>
 
-						<br/>
+					<br/>
 						
-						<div id="con2webm">
-							<h3>con2webm <font size="3">(ruby)</font></h3>
-							<p>
-								Automates converting mp4 videos to webm.
+					<div id="con2webm">
+						<h3>con2webm <font size="3">(ruby)</font></h3>
+						<p>
+							Automates converting mp4 videos to webm.
 								
-								<br/>
-								<br/>
-								<b>Requirements:</b>
-								<ul>
-									<li>ffmpeg</li>
-									<li>ffprober gem</li>
-								</ul>
-							</p>
-							<a href="http://github.com/mbkulik/con2webm">code</a>
-						</div>
+							<br/>
+							<br/>
+							<b>Requirements:</b>
+							<ul>
+								<li>ffmpeg</li>
+								<li>ffprober gem</li>
+							</ul>
+						</p>
+						<a href="http://github.com/mbkulik/con2webm">code</a>
+					</div>
 						
-						<br/>
+					<br/>
 						
-						<div id="dvd2mp4">
-							<h3>dvd2mp4 <font size="3">(ruby)</font></h3>
-							<p>
-								Automates converting a dvd to mp4.
+					<div id="dvd2mp4">
+						<h3>dvd2mp4 <font size="3">(ruby)</font></h3>
+						<p>
+							Automates converting a dvd to mp4.
 								
-								<br/>
-								<br/>
-								<b>Requirements:</b>
-								<ul>
-									<li>HandBrakeCLI</li>
-								</ul>
-							</p>
-							<a href="http://github.com/mbkulik/dvd2mp4">code</a>		
-						</div>
+							<br/>
+							<br/>
+							<b>Requirements:</b>
+							<ul>
+								<li>HandBrakeCLI</li>
+							</ul>
+						</p>
+						<a href="http://github.com/mbkulik/dvd2mp4">code</a>		
 					</div>
 				</div>
-			</div>
 		</div>
 		
 		<!-- scripts -->
