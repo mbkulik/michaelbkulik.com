@@ -1,236 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Michael B. Kulik</title>	
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="Michael B. Kulik">
+  <head>
+    <title>Michael B. Kulik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Michael B. Kulik">
+
+    <link rel="stylesheet"
+	  href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+	  href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 		
-		<link rel="stylesheet" 
-			href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-		<link rel="stylesheet" 
-			href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	  rel='stylesheet' type='text/css'>
 		
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' 
-			rel='stylesheet' type='text/css'>
+    <style type="text/css">
+     body {
+       padding-top: 40px;
+       padding-bottom: 40px;
+       font-family: 'Open Sans', sans-serif;
+     }
 		
-		<style type="text/css">
-			body {
-				padding-top: 40px;
-				padding-bottom: 40px;
-				font-family: 'Open Sans', sans-serif;
-			}
+     ul {
+       list-style-type: none;
+       padding-left: 1em;
+     }
+    </style>
+
+    <link rel="shortcut icon"
+	  href="http://www.gravatar.com/avatar/7d969f69bf56a6cda1dbf4bdbe3566db.png?s=16">
+  </head>
+  <body>
+    <div class="container">
+    
+      <!-- Navigation Bar -->
+      <div class="row">
+	<div class="col-md-8 col-md-offset-2">
+	  <ul class="nav nav-pills nav-justified">
+            <li><a href="#about">About</a></li>
+            <li><a href="#openbsd">OpenBSD</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="http://blog.michaelbkulik.com">Blog</a></li>
+          </ul>
+	</div>
+      </div>
+
+      <br/>
+      <br/>
+      
+      <div class="row">
+	<div class="col-md-8 col-md-offset-2">
+
+	  <!-- About -->
+	  <div id="about">
+	    <h1>About</h1>
+	    <hr/>
+	    <p>
+	      I live, work, and attend graduate school in the great state of 
+              New Hampshire. During the day, I am a C++/.NET programmer writing 
+              software for CAD systems. At night, I attend graduate school and 
+              work on my side projects.
+	      <br/>
+	      <br/>
+	      
+	      <h4>Interests:</h4>
+	      <ul>
+		<li>OpenBSD, Mac OS X</li>
+		<li>C, Ruby</li>
+		<li>HTML5 video streaming</li>
+		<li>astronomy, astrophysics</li>
+	      </ul>
+
+	      <h4>Contact:</h4>
+	      <ul>
+		<li><a href="http://github.com/mbkulik">
+                  github.com/mbkulik</a></li>
+		<li><a href="mailto:mbk@michaelbkulik.com">
+                  mbk@michaelbkulik.com</a></li>
+	      </ul>
+	    </p>
+	  </div>
+
+	  <br/>
+	  <br/>
+
+	  <!-- OpenBSD -->
+	  <div id="openbsd">
+	    <h1>OpenBSD</h1>
+	    <hr/>
+	    <p>
+	      I have been using OpenBSD in earnest since version 4.6 and for the 
+              past year have been starting to use ruby more and more in my side 
+              projects. The only downside is that the official ruby packages 
+              sometimes lag behind the latest releases. I started compiling ruby 
+              by hand, and then wrote a script to automate the build process.
+              <br/><br/><a href="#mkruby">mkruby</a> fetches, builds, and 
+              installs the latest 1.9.3 patchset from ruby-lang.org and applies 
+              the relevant openbsd patches. The main differences between mkruby 
+              and official ruby packages are the binaries and gems do not have 
+              the 19 suffix. So that extra step of creating links is no longer 
+              needed.
+	    </p>
+	  </div>
+
+	  <br/>
+	  <br/>
+	  
+	  <!-- Projects -->
+	  <div id="projects">
+	    <h1>Projects</h1>
+	    <hr/>
+	    
+	    <div id="moviestreamerb">
+	      <h3>moviestreamerb <font size="3">(ruby)</font></h3>
+	      <p>
+		A simple sinatra app for watching personal movies through HTML5 
+		compatible browsers.
+		<br/>
+		<br/>
+		<b>Requirements:</b>
+		<ul>
+		  <li>puma gem</li>
+		  <li>sinatra gem</li>
+		  <li>browser gem</li>
+		  <li>json gem</li>
+		</ul>
+	      </p>
+	      <a href="http://github.com/mbkulik/moviestreamer">code</a>
+	    </div>
+	    
+	    <br/>
+	    
+	    <div id="mg">
+	      <h3>mg editor <font size="3">(c)</font></h3>
+	      <p>
+		This project has been deprecated. mg is now available through
+		<a href="http://brew.sh/">homebrew</a>. If there is any interest 
+		in a standalone binary installer, please email me and I will 
+		continue to support it. The code will remain on github.
+	      </p>
+	      <a href="http://github.com/mbkulik/mg">code</a>
+	    </div>
+						
+	    <br/>
+
+	    <div id="mkruby">
+	      <h3>mkruby <font size="3">(shell)</font></h3>
+	      <p>
+		Fetches and builds the latest 1.9.3 or 2.0.0 ruby patchset.
 		
-			ul {
-				list-style-type: none;
-				padding-left: 1em;
-			}
-		</style>
+		<br/>
+		<br/>
+		<b>Requirements:</b>
+		<ul>
+		  <li>OpenBSD 5.3 i386/amd64</li>
+		  <li>libffi</li>
+		  <li>libyaml</li>
+		  <li>bash shell</li>
+		  <li>cURL</li>
+		</ul>
+	      </p>
+	      <a href="http://github.com/mbkulik/mkruby">code</a>
+	    </div>
+	    
+	    <br/>
+	    
+	    <div id="con2webm">
+	      <h3>con2webm <font size="3">(ruby)</font></h3>
+	      <p>
+		Automates converting mp4 videos to webm.
 		
-		<link rel="shortcut icon" 
-			href="http://www.gravatar.com/avatar/7d969f69bf56a6cda1dbf4bdbe3566db.png?s=16">
-	</head>
-	<body>
+		<br/>
+		<br/>
+		<b>Requirements:</b>
+		<ul>
+		  <li>ffmpeg</li>
+		  <li>ffprober gem</li>
+		</ul>
+	      </p>
+	      <a href="http://github.com/mbkulik/con2webm">code</a>
+	    </div>
+	    
+	    <br/>
+	    
+	    <div id="dvd2mp4">
+	      <h3>dvd2mp4 <font size="3">(ruby)</font></h3>
+	      <p>
+		Automates converting a dvd to mp4.
 		
-		<div class="container">
-			
-			<div class="row">
-				<div class="col-xs-8 col-md-offset-1">
-					<ul class="nav nav-pills pull-right">
-            			<li><a href="#about">About</a></li>
-            			<li><a href="#openbsd">OpenBSD</a></li>
-            			<li><a href="#projects">Projects</a></li>
-            			<li><a href="http://blog.michaelbkulik.com">Blog</a></li>
-            		</ul>
-				</div>
-			</div>
-				
-			<div class="row">
-				<div class="col-xs-8 col-md-offset-2">
-				
-				<!-- About -->
-				<div id="about">
-					<h1>About</h1>
-					<hr/>		
-					<p>
-						I live, work, and attend graduate school in the great 
-						state of New Hampshire.
-						During the day, I am a C++/.NET programmer writing 
-						software for CAD systems.
-						At night, I attend graduate school and work on my side 
-						projects.
-						
-						<br/>
-						<br/>
-						
-						<h4>Interests:</h4>
-						<ul>
-							<li>OpenBSD, Mac OS X</li>
-							<li>C, Ruby</li>
-							<li>HTML5 video streaming</li>
-							<li>astronomy, astrophysics</li>
-						</ul>
-						
-						<h4>Contact:</h4>
-						<ul>
-							<li><a href="http://github.com/mbkulik">github.com/mbkulik</a></li>
-							<li><a href="mailto:mbk@michaelbkulik.com">mbk@michaelbkulik.com</a></li>
-						</ul>		
-					</p>
-				</div>
-
-				<br/>
-				<br/>
-
-				<!-- OpenBSD -->
-				<div id="openbsd">
-					<h1>OpenBSD</h1>
-					<hr/>
-					<p>
-						I have been using OpenBSD in earnest since version 4.6 
-						and for the past year have been starting to use ruby 
-						more and more in my side projects. The only downside is 
-						that the official ruby packages sometimes lag behind 
-						the latest releases. I started compiling ruby by hand, 
-						and then wrote a script to automate the build process.
-						<br/><br/>
-						<a href="#mkruby">mkruby</a> 
-						fetches, builds, and installs the latest 1.9.3 patchset 
-						from ruby-lang.org and applies the relevant openbsd 
-						patches. The main differences between mkruby and 
-						official ruby packages are the binaries and gems do not 
-						have the 19 suffix. So that extra step of creating 
-						links is no longer needed.
-					</p>
-				</div>
-
-				<br/>
-				<br/>
-
-				<!-- Projects -->
-				<div id="projects">
-					<h1>Projects</h1>
-					<hr/>
-
-					<div id="MovieStreamer App">
-						<h3>MovieStreamer App <font size="3">(Objective-C)</font></h3>
-						<p>
-							Inspired by the moviestreamer sinatra app, 
-							MovieStreamer is a native Mac OS X application 
-							for watching personal movies stored on your mac via any 
-							HTML5 compatible browser on your local network.
-						</p>
-						<a href="http://moviestreamerapp.com">website</a>&nbsp;
-						<a href="http://github.com/mbkulik/moviestreamerapp">code</a>
-					</div>
-
-					<br/>
-
-					<div id="moviestreamer">
-						<h3>moviestreamer <font size="3">(ruby)</font></h3>
-						<p>
-							A simple sinatra app for watching personal movies 
-							through HTML5 compatible browsers.
-								
-							<br/>
-							<br/>
-							<b>Requirements:</b>
-							<ul>
-								<li>puma gem</li>
-								<li>sinatra gem</li>
-								<li>browser gem</li>
-								<li>json gem</li>
-							</ul>
-						</p>
-						<a href="http://github.com/mbkulik/moviestreamer">code</a>
-					</div>
-
-					<br/>
-
-					<div id="mg">
-						<h3>mg editor <font size="3">(c)</font></h3>
-						<p>
-							This project has been deprecated. mg is now available through
-							<a href="http://brew.sh/">homebrew</a>. If there is any interest
-							in a standalone binary installer, please email me and I will
-							continue to support it. The code will remain on github. 
-						</p>
-						<a href="http://github.com/mbkulik/mg">code</a>
-					</div>
-						
-					<br/>
-
-					<div id="mkruby">
-						<h3>mkruby <font size="3">(shell)</font></h3>
-						<p>
-							Fetches and builds the latest 1.9.3 or 2.0.0 ruby 
-							patchset.
-								
-							<br/>
-							<br/>
-							<b>Requirements:</b>
-							<ul>
-								<li>OpenBSD 5.3 i386/amd64</li>
-								<li>libffi</li>
-								<li>libyaml</li>
-								<li>bash shell</li>
-								<li>cURL</li>
-							</ul>
-						</p>
-						<a href="http://github.com/mbkulik/mkruby">code</a>
-					</div>
-
-					<br/>
-						
-					<div id="con2webm">
-						<h3>con2webm <font size="3">(ruby)</font></h3>
-						<p>
-							Automates converting mp4 videos to webm.
-								
-							<br/>
-							<br/>
-							<b>Requirements:</b>
-							<ul>
-								<li>ffmpeg</li>
-								<li>ffprober gem</li>
-							</ul>
-						</p>
-						<a href="http://github.com/mbkulik/con2webm">code</a>
-					</div>
-						
-					<br/>
-						
-					<div id="dvd2mp4">
-						<h3>dvd2mp4 <font size="3">(ruby)</font></h3>
-						<p>
-							Automates converting a dvd to mp4.
-								
-							<br/>
-							<br/>
-							<b>Requirements:</b>
-							<ul>
-								<li>HandBrakeCLI</li>
-							</ul>
-						</p>
-						<a href="http://github.com/mbkulik/dvd2mp4">code</a>		
-					</div>
-				</div>
-				</div>
-		</div>
+		<br/>
+		<br/>
+		<b>Requirements:</b>
+		<ul>
+		  <li>HandBrakeCLI</li>
+		</ul>
+	      </p>
+	      <a href="http://github.com/mbkulik/dvd2mp4">code</a>
+	    </div>
+	    
+            <br/>
+            
+	    <div id="getffmpeg">
+	      <h3>getffmpeg <font size="3">(shell)</font></h3>
+	      <p>
+		Installs the static mac os x builds of ffmpeg and ffprobe 
+		from http://evermeet.cx to /usr/local/bin
 		
-		<!-- scripts -->
-		<script src="//code.jquery.com/jquery.js">
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-		<script>
-  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  			ga('create', 'UA-45959744-2', 'michaelbkulik.com');
- 			ga('send', 'pageview');
-
-		</script>
-	</body>
+		<br/>
+		<br/>
+		<b>Requirements:</b>
+		<ul>
+		  <li>p7zip</li>
+		  <li>cURL</li>
+		</ul>
+	      </p>
+	      <a href="http://github.com/mbkulik/getffmpeg">code</a>
+            </div>
+	  </div>
+	</div>
+      </div>
+		
+      <!-- scripts -->
+      <script src="//code.jquery.com/jquery.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+      </script>
+  </body>
 </html>
