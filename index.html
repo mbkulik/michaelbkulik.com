@@ -8,22 +8,23 @@
     <meta name="author" content="Michael B. Kulik">
 
     <link rel="stylesheet"
-	  href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet"
-	  href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 		
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans'
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans'
 	  rel='stylesheet' type='text/css'>
-		
+
+    <link href="/css/octicons/octicons.css" rel='stylesheet', type='text/css'>
+
     <style type="text/css">
      body {
        padding-top: 40px;
        padding-bottom: 40px;
        font-family: 'Open Sans', sans-serif;
      }
-		
-     ul {
-       list-style-type: none;
+
+     li {
        padding-left: 1em;
      }
     </style>
@@ -38,10 +39,10 @@
       <div class="row">
 	<div class="col-md-8 col-md-offset-2">
 	  <ul class="nav nav-pills nav-justified">
-            <li><a href="#about">About</a></li>
-            <li><a href="#openbsd">OpenBSD</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="http://blog.michaelbkulik.com">Blog</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#openbsd">OpenBSD</a></li>
+            <li><a href="/#projects">Projects</a></li>
+	    <li><a href="/blog/">Blog</a></li>
           </ul>
 	</div>
       </div>
@@ -57,28 +58,35 @@
 	    <h1>About</h1>
 	    <hr/>
 	    <p>
-	      I am a graduate student living and learning in the great state of
-	      New Hampshire. Starting in September 2014, I am taking a sabbatical from my
-	      career to complete my master's degree in computer science. Previously, I wrote
-	      commercial C++/.NET software for CAD systems.
+	      I am a graduate student studying computer science at the
+	      University of New Hampshire. Before this I wrote
+	      commercial CAD software for the fire protection industry.
+
 	      <br/>
 	      <br/>
 	    </p>
 	      
 	    <h4>Interests:</h4>
-	    <ul>
+	    <ul class="list-unstyled">
 	      <li>UNIX/Linux Operating Systems</li>
 	      <li>C, Ruby</li>
 	      <li>HTML5 video streaming</li>
 	      <li>astronomy, astrophysics</li>
 	    </ul>
 
-	    <h4>Contact:</h4>
-	    <ul>
-	      <li><a href="http://github.com/mbkulik">
-                github.com/mbkulik</a></li>
-	      <li><a href="mailto:mbk@michaelbkulik.com">
-                mbk@michaelbkulik.com</a></li>
+	    <br/>
+
+	    <ul class="list-inline">
+	      <li>
+		<a href="https://github.com/mbkulik">
+		  <span class="mega-octicon octicon-mark-github"></span>
+		</a>
+	      </li>
+	      <li>
+		<a href="mailto:mbk@michaelbkulik.com"
+		  <span class="mega-octicon octicon-mail"></span>
+		</a>
+	      </li>
 	    </ul>
 	  </div>
 
@@ -132,7 +140,7 @@
 		<br/>
 	      </p>
 	      <b>Requirements:</b>
-	      <ul>
+	      <ul class="list-unstyled">
 		<li>puma gem</li>
 		<li>sinatra gem</li>
 		<li>browser gem</li>
@@ -163,7 +171,7 @@
 		<br/>
 	      </p>
 	      <b>Requirements:</b>
-	      <ul>
+	      <ul class="list-unstyled">
 		<li>OpenBSD 5.3 i386/amd64</li>
 		<li>libffi</li>
 		<li>libyaml</li>
@@ -183,7 +191,7 @@
 		<br/>
 	      </p>
 	      <b>Requirements:</b>
-	      <ul>
+	      <ul class="list-unstyled">
 		<li>ffmpeg</li>
 		<li>ffprober gem</li>
 	      </ul>
@@ -200,7 +208,7 @@
 		<br/>
 	      </p>
 	      <b>Requirements:</b>
-	      <ul>
+	      <ul class="list-unstyled">
 		<li>HandBrakeCLI</li>
 	      </ul>
 	      <a href="http://github.com/mbkulik/dvd2mp4">code</a>
@@ -217,7 +225,7 @@
 		<br/>
 	      </p>
 	      <b>Requirements:</b>
-	      <ul>
+	      <ul class="list-unstyled">
 		<li>p7zip</li>
 		<li>cURL</li>
 	      </ul>
