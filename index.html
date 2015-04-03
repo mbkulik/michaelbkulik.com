@@ -1,239 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Michael B. Kulik</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Michael B. Kulik">
+<html>
+	<head>
+		<title>Michael B. Kulik</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet"
-	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet"
-	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet"
-          href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="shortcut icon"
+	 		href="http://www.gravatar.com/avatar/7d969f69bf56a6cda1dbf4bdbe3566db.png?s=16">
+	</head>
+	<body>
+		<div class="container">
+			<div class="site">
+				<h1>Michael B. Kulik</h1>
+				<p>
+					I am a graduate student studying computer science at the
+	      			University of New Hampshire. Previously, I wrote
+	      			commercial CAD software for the fire protection industry.
+      			</p>
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans'
-	  rel='stylesheet' type='text/css'>
+      			<h3>Interests:</h3>
+	    		<ul>
+	      			<li>UNIX/Linux Operating Systems</li>
+	      			<li>Parallel/Concurrent Programming</li>
+	      			<li><a href="http://reactivex.io/">Reactive Programming</a></li>
+	      			<li>HTML5 video streaming</li>
+	      			<li>Space Exploration</li>
+	    		</ul>
 
-    <style type="text/css">
-     body {
-       padding-top: 40px;
-       padding-bottom: 40px;
-       font-family: 'Open Sans', sans-serif;
-     }
+	    		<h3>Contact:</h3>
+	    		<ul>
+	    			<li><a href="mailto:mbk@michaelbkulik.com">mbk@michaelbkulik.com</a></li>
+	    			<li><a href="https://github.com/mbkulik">github.com/mbkulik</a></li>
+	    		</ul>
 
-     li {
-       padding-left: 1em;
-     }
-    </style>
+	    		<br/>
 
-    <link rel="shortcut icon"
-	  href="http://www.gravatar.com/avatar/7d969f69bf56a6cda1dbf4bdbe3566db.png?s=16">
-  </head>
-  <body>
-    <div class="container">
-    
-      <!-- Navigation Bar -->
-      <div class="row">
-	<div class="col-md-8 col-md-offset-2">
-	  <ul class="nav nav-pills nav-justified">
-            <li><a href="/">Home</a></li>
-            <li><a href="/#openbsd">OpenBSD</a></li>
-            <li><a href="/#projects">Projects</a></li>
-	    <li><a href="/blog/">Blog</a></li>
-          </ul>
-	</div>
-      </div>
+				<h2>Projects</h2>
+	    		<div id="MovieStreamer">
+	      			<h3>MovieStreamer App <small>(Objective-C)</small></h3>
+	      			<p>
+						Inspired by the moviestreamer sinatra app,
+						MovieStreamer is a native Mac OS X application
+						for watching personal movies stored on your mac via any
+						HTML5 compatible browser on your local network.
+	      			</p>
+	      			<a href="http://moviestreamerapp.com">website</a>&nbsp;
+	      			<a href="http://github.com/mbkulik/moviestreamerapp">code</a>
+	    		</div>
 
-      <br/>
-      <br/>
-      
-      <div class="row">
-	<div class="col-md-8 col-md-offset-2">
-
-	  <!-- About -->
-	  <div id="about">
-	    <h1>About</h1>
-	    <hr/>
-	    <p>
-	      I am a graduate student studying computer science at the
-	      University of New Hampshire. Before this I wrote
-	      commercial CAD software for the fire protection industry.
-
-	      <br/>
-	      <br/>
-	    </p>
-	      
-	    <h4>Interests:</h4>
-	    <ul class="list-unstyled">
-	      <li>UNIX/Linux Operating Systems</li>
-	      <li>C, Ruby</li>
-	      <li>HTML5 video streaming</li>
-	      <li>astronomy, astrophysics</li>
-	    </ul>
-
-	    <br/>
-
-	    <ul class="list-inline">
-	      <li>
-		<a href="https://github.com/mbkulik">
-		  <span class="fa fa-github fa-3x"></span>
-		</a>
-	      </li>
-	      <li>
-		<a href="mailto:mbk@michaelbkulik.com"
-		  <span class="fa fa-envelope-o fa-3x"></span>
-		</a>
-	      </li>
-	    </ul>
-	  </div>
-
-	  <br/>
-	  <br/>
-
-	  <!-- OpenBSD -->
-	  <div id="openbsd">
-	    <h1>OpenBSD</h1>
-	    <hr/>
-	    <p>
-	      I have been using OpenBSD in earnest since version 4.6 and for the 
-              past year have been starting to use ruby more and more in my side 
-              projects. The only downside is that the official ruby packages 
-              sometimes lag behind the latest releases. I started compiling ruby 
-              by hand, and then wrote a script to automate the build process.
-              <br/><br/><a href="#mkruby">mkruby</a> fetches, builds, and 
-              installs the latest 1.9.3 patchset from ruby-lang.org and applies 
-              the relevant openbsd patches. The main differences between mkruby 
-              and official ruby packages are the binaries and gems do not have 
-              the 19 suffix. So that extra step of creating links is no longer 
-              needed.
-	    </p>
-	  </div>
-
-	  <br/>
-	  <br/>
-	  
-	  <!-- Projects -->
-	  <div id="projects">
-	    <h1>Projects</h1>
-	    <hr/>
-
-	    <div id="MovieStreamer">
-	      <h3>MovieStreamer App <small>(Objective-C)</small></h3>
-	      <p>
-		Inspired by the moviestreamer sinatra app,
-		MovieStreamer is a native Mac OS X application
-		for watching personal movies stored on your mac via any
-		HTML5 compatible browser on your local network.
-	      </p>
-	      <a href="http://moviestreamerapp.com">website</a>&nbsp;
-	      <a href="http://github.com/mbkulik/moviestreamerapp">code</a>
-	    </div>
+	    		<br/>
 	    
-	    <div id="moviestreamerb">
-	      <h3>moviestreamerb <small>(ruby)</small></h3>
-	      <p>
-		A simple sinatra app for watching personal movies through HTML5 
-		compatible browsers.
-		<br/>
-	      </p>
-	      <b>Requirements:</b>
-	      <ul class="list-unstyled">
-		<li>puma gem</li>
-		<li>sinatra gem</li>
-		<li>browser gem</li>
-		<li>json gem</li>
-	      </ul>
-	      <a href="http://github.com/mbkulik/moviestreamer">code</a>
-	    </div>
+	    		<div id="moviestreamerb">
+	      			<h3>moviestreamerb <small>(ruby)</small></h3>
+	      			<p>
+						A simple sinatra app for watching personal movies through HTML5 
+						compatible browsers.
+					<br/>
+	      			</p>
+	      			<b>Requirements:</b>
+	      			<ul>
+						<li>puma gem</li>
+						<li>sinatra gem</li>
+						<li>browser gem</li>
+						<li>json gem</li>
+	      			</ul>
+	      			<a href="http://github.com/mbkulik/moviestreamer">code</a>
+	    		</div>
 	    
-	    <br/>
+	    		<br/>
 	    
-	    <div id="mg">
-	      <h3>mg editor <small>(c)</small></h3>
-	      <p>
-		This project has been deprecated. mg is now available through
-		<a href="http://brew.sh/">homebrew</a>. If there is any interest 
-		in a standalone binary installer, please email me and I will 
-		continue to support it. The code will remain on github.
-	      </p>
-	      <a href="http://github.com/mbkulik/mg">code</a>
-	    </div>
+	    		<div id="mg">
+	      			<h3>mg editor <small>(c)</small></h3>
+	      			<p>
+						This project has been deprecated. mg is now available through
+						<a href="http://brew.sh/">homebrew</a>. If there is any interest 
+						in a standalone binary installer, please email me and I will 
+						continue to support it. The code will remain on github.
+	      			</p>
+	      			<a href="http://github.com/mbkulik/mg">code</a>
+	    		</div>
 						
-	    <br/>
+	    		<br/>
 
-	    <div id="mkruby">
-	      <h3>mkruby <small>(shell)</small></h3>
-	      <p>
-		Fetches and builds the latest 1.9.3 or 2.0.0 ruby patchset.
-		<br/>
-	      </p>
-	      <b>Requirements:</b>
-	      <ul class="list-unstyled">
-		<li>OpenBSD 5.3 i386/amd64</li>
-		<li>libffi</li>
-		<li>libyaml</li>
-		<li>bash shell</li>
-		<li>cURL</li>
-	      </ul>
-	      <a href="http://github.com/mbkulik/mkruby">code</a>
-	    </div>
+	    		<div id="mkruby">
+	      			<h3>mkruby <small>(shell)</small></h3>
+	      			<p>
+					Fetches and builds the latest 1.9.3 or 2.0.0 ruby patchset.
+					<br/>
+	      			</p>
+	      			<b>Requirements:</b>
+	      			<ul>
+						<li>OpenBSD 5.3 i386/amd64</li>
+						<li>libffi</li>
+						<li>libyaml</li>
+						<li>bash shell</li>
+						<li>cURL</li>
+	      			</ul>
+	      			<a href="http://github.com/mbkulik/mkruby">code</a>
+	    		</div>
+	    	
+	    		<br/>
 	    
-	    <br/>
+	    		<div id="con2webm">
+	      			<h3>con2webm <small>(ruby)</small></h3>
+	      			<p>
+						Automates converting mp4 videos to webm.
+						<br/>
+	      			</p>
+	      			<b>Requirements:</b>
+	      			<ul>
+						<li>ffmpeg</li>
+						<li>ffprober gem</li>
+	      			</ul>
+	      			<a href="http://github.com/mbkulik/con2webm">code</a>
+	    		</div>
 	    
-	    <div id="con2webm">
-	      <h3>con2webm <small>(ruby)</small></h3>
-	      <p>
-		Automates converting mp4 videos to webm.
-		
-		<br/>
-	      </p>
-	      <b>Requirements:</b>
-	      <ul class="list-unstyled">
-		<li>ffmpeg</li>
-		<li>ffprober gem</li>
-	      </ul>
-	      <a href="http://github.com/mbkulik/con2webm">code</a>
-	    </div>
+	    		<br/>
 	    
-	    <br/>
+	    		<div id="dvd2mp4">
+	      			<h3>dvd2mp4 <small>(ruby)</small></h3>
+	      			<p>
+						Automates converting a dvd to mp4.
+						<br/>
+	      			</p>
+	      			<b>Requirements:</b>
+	      			<ul>
+						<li>HandBrakeCLI</li>
+	      			</ul>
+	      			<a href="http://github.com/mbkulik/dvd2mp4">code</a>
+	    		</div>
 	    
-	    <div id="dvd2mp4">
-	      <h3>dvd2mp4 <small>(ruby)</small></h3>
-	      <p>
-		Automates converting a dvd to mp4.
-		
-		<br/>
-	      </p>
-	      <b>Requirements:</b>
-	      <ul class="list-unstyled">
-		<li>HandBrakeCLI</li>
-	      </ul>
-	      <a href="http://github.com/mbkulik/dvd2mp4">code</a>
-	    </div>
-	    
-            <br/>
+            	<br/>
             
-	    <div id="getffmpeg">
-	      <h3>getffmpeg <small>(shell)</small></h3>
-	      <p>
-		Installs the static mac os x builds of ffmpeg and ffprobe 
-		from http://evermeet.cx to /usr/local/bin
-		
-		<br/>
-	      </p>
-	      <b>Requirements:</b>
-	      <ul class="list-unstyled">
-		<li>p7zip</li>
-		<li>cURL</li>
-	      </ul>
-	      <a href="http://github.com/mbkulik/getffmpeg">code</a>
+	    		<div id="getffmpeg">
+	      			<h3>getffmpeg <small>(shell)</small></h3>
+	      			<p>
+						Installs the static mac os x builds of ffmpeg and ffprobe 
+						from http://evermeet.cx to /usr/local/bin
+						<br/>
+	      			</p>
+	      			<b>Requirements:</b>
+	      			<ul>
+						<li>p7zip</li>
+						<li>cURL</li>
+	      				</ul>
+	      			<a href="http://github.com/mbkulik/getffmpeg">code</a>
+            	</div>
             </div>
-	  </div>
-	</div>
-      </div>
-    </div>
-  </body>
+		</div>
+	</body>
 </html>

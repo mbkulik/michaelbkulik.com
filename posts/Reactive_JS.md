@@ -1,3 +1,0 @@
-This next semester I will be researching the reactive programming paradigm and common pitfalls faced
-when using RX in concurrent programming. I will use this space for discussing learning javascript,
-reactive programming (RxJS), and concurrent programming. 

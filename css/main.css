@@ -1,0 +1,95 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format('woff');
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #FFF;
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+  font: 16px "Source Sans Pro","Open Sans","Helvetica Neue",sans-serif;
+  -webkit-font-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+h2 {
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+  text-align: center;
+}
+h3 {
+  margin-top: 0.7em;
+  margin-bottom: 0.2em;
+}
+h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  color: #333;
+  font-style: italic;
+}
+h5 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-size: large;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+
+a         { color: #08a; }
+a:hover   { color: #08a; }
+a:visited { color: #08a; }
+
+ul {
+  list-style-type:none;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 35em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
+
+.site pre {
+  border: solid 1px;
+  border-color: rgb(210, 210, 210);
+  padding: 8px;
+  padding-left: 16px;
+  margin: 20px;
+  background-color: rgb(238, 238, 238);
+  color: darkgreen;
+  font-size: smaller;
+  line-height: 1.2em;
+}
